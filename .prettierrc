@@ -1,4 +1,13 @@
 {
   "singleQuote": true,
-  "trailingComma": "all"
+  "trailingComma": "all",
+  "bracketSpacing": true,
+  "overrides": [
+    {
+      "files": "*.ts",
+      "options": {
+        "printWidth": 100
+      }
+    }
+  ]
 }
