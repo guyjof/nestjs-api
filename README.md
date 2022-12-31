@@ -27,7 +27,9 @@ Simple CRUD API Project using [Nestjs](https://github.com/nestjs/nest) framework
 ## Before you start
 
 ```bash
-# Verify that you are running at least node 10.x or greater and npm 6.x or greater by running node -v and npm -v in a terminal/console window. Older versions produce errors, but newer versions are fine.
+# Verify that you are running at least node 10.x or greater 
+# and npm 6.x or greater by running node -v and npm -v in a terminal/console window.
+# Older versions produce errors, but newer versions are fine.
 $ node -v
 $ npm -v
 # if you don't have node installed, install it from the node website
