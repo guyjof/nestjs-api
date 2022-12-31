@@ -19,12 +19,34 @@
     <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
   <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
 </p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Simple CRUD API Project using [Nestjs](https://github.com/nestjs/nest) framework with [TypeScript](https://github.com/microsoft/TypeScript), [Docker](https://www.docker.com/) and [Prisma](https://www.prisma.io/).
+
+## Before you start
+
+```bash
+# Verify that you are running at least node 10.x or greater and npm 6.x or greater by running node -v and npm -v in a terminal/console window. Older versions produce errors, but newer versions are fine.
+$ node -v
+$ npm -v
+# if you don't have node installed, install it from the node website
+$ https://nodejs.org/en/download/
+# or install it with brew
+$ brew install node
+# install @nestjs/cli globally with npm
+$ npm i -g @nestjs/cli
+# or with yarn
+$ yarn global add @nestjs/cli
+# install docker desktop with npm
+$ npm i -g docker-compose
+# or with yarn
+$ yarn global add docker-compose
+# or install docker desktop with brew
+$ brew cask install docker
+# or install from the docker website
+$ https://www.docker.com/products/docker-desktop
+```
 
 ## Installation
 
@@ -58,16 +80,24 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-## Support
+## Docker
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+```bash
+# build docker image
+$ docker-compose build
+# run docker container
+$ docker-compose up
+# or
+$ docker-compose up -d
+# stop docker container
+$ docker-compose down
+```
 
-## Stay in touch
+## Prisma
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+```bash
+# to generate prisma client GUI
+$ npx prisma studio
+# or
+$ npm run prisma:gui
+```
